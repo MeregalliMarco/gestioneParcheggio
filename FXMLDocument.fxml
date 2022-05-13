@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="endH" prefHeight="442.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestioneparcheggio.FXMLDocumentController">
+   <children>
+      <Text fill="#0037ff" layoutX="111.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestione Parcheggio" textAlignment="CENTER">
+         <font>
+            <Font name="Broadway" size="24.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" layoutX="450.0" layoutY="82.0" prefHeight="219.0" prefWidth="316.0" spacing="30.0">
+         <children>
+            <Button fx:id="payButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="165.0" text="Pagamento (tempo extra)" />
+            <Button fx:id="regButton" mnemonicParsing="false" text="Regsitra Automobile (Targa)" />
+            <Button fx:id="viewButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="165.0" text="Visualizza Mappa Posti" />
+         </children>
+      </VBox>
+      <DatePicker fx:id="datePicker" layoutX="197.0" layoutY="119.0" />
+      <ChoiceBox fx:id="startH" layoutX="248.0" layoutY="192.0" prefHeight="25.0" prefWidth="123.0" />
+      <ChoiceBox fx:id="startH1" layoutX="248.0" layoutY="247.0" prefHeight="25.0" prefWidth="123.0" />
+      <Text layoutX="36.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELEZIONA GIORNO" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELZIONA ORA DI INIZIO" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELEZIONA ORA DI FINE" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="bookButton" layoutX="548.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Prenota Parcheggio" />
+      <Label fx:id="dispLabel" layoutX="56.0" layoutY="347.0" prefHeight="27.0" prefWidth="298.0" text="PARCHEGGIO NON DISPONIBILE" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
